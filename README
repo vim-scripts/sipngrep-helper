@@ -1,0 +1,9 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2297
+
+Helper functions mapped to
+<Plug>SkipToMatchingRequest (standard <LocalLeader>sq)
+<Plug>SkipToMatchingResponse (standard <LocalLeader>sr)
+When used with cursor over a packet, they will find either following matching (by CSeq) response, or previous matching request.
+
+Expected format of sip capture is the same as produced by `ngrep -q -tt -W byline ....`
+Works on the same captures as syntax sipngrep highlighter: vimscript #2296
